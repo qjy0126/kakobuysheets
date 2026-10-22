@@ -5,6 +5,7 @@
   const items = Array.isArray(window.PRODUCTS) ? window.PRODUCTS : [];
   const params = new URLSearchParams(location.search);
   const initialQ = String(params.get("q") || "").trim();
+  const initialCat = String(params.get("cat") || "").trim();
 
   if (!grid || !window.KS) return;
 
@@ -47,7 +48,7 @@
   ];
   const present = new Set(items.map((p) => p.category).filter(Boolean));
   const cats = order.filter((c) => c === "all" || present.has(c));
-  let active = "all";
+  let active = labels[initialCat] ? initialCat : "all";
   let query = initialQ.toLowerCase();
   let queryLabel = initialQ;
 

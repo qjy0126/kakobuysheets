@@ -82,7 +82,7 @@
             ${categories
               .map(
                 (c) =>
-                  `<a href="${findsBase}?q=${encodeURIComponent(c.label)}" data-cat="${c.slug}">
+                  `<a href="${findsBase}?cat=${encodeURIComponent(c.slug)}" data-cat="${c.slug}">
                     <span class="search-cat-ico" aria-hidden="true"></span>
                     <span>${c.label}</span>
                   </a>`
