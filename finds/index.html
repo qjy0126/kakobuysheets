@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All Products | Kakobuysheets</title>
+  <meta name="description" content="Browse all Kakobuy spreadsheet finds — shoes, hoodies, jackets, accessories and more with CNY/USD prices and Buy Link checkout." />
+  <link rel="canonical" href="https://kakobuysheets.me/finds/" />
+  <link rel="icon" href="../img/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css?v=15" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/" aria-label="Kakobuysheets home">
+        <img src="../img/logo-k-transparent.png" alt="" width="34" height="44" />
+        <span class="brand-name">Kakobuy<span>sheets</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a href="/finds/">Spreadsheet</a>
+        <a href="/#categories">Categories</a>
+        <a href="/finds/">Finds</a>
+        <a href="../guide.html">Guide</a>
+                <button type="button" class="nav-search" data-open-search aria-label="Open search">
+          <span class="nav-search-ph">Search finds…</span>
+          <span class="nav-search-ico" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <a class="btn btn-solid nav-cta" href="https://ikako.vip/r/9v88f" target="_blank" rel="noopener">Sign up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div class="wrap">
+        <p class="shop-crumb"><a href="/">Home</a> / <span>All Products</span></p>
+        <h1>All Products</h1>
+        <p>Every category from the Kakobuy spreadsheet hub — open a card for details, or use Buy Link to order on Kakobuy.</p>
+      </div>
+    </section>
+
+    <section class="section shop-section">
+      <div class="wrap">
+        <div class="shop-top">
+          <p id="shop-count">Loading finds…</p>
+          <div class="shop-filters" id="shop-filters" aria-label="Filter by category"></div>
+        </div>
+        <div class="shop-grid" id="shop-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>
+        <a class="footer-brand" href="/">
+          <img src="../img/logo-k-transparent.png" alt="" width="28" height="36" />
+          <span>Kakobuysheets</span>
+        </a>
+        <p>Independent spreadsheet directory for Kakobuy finds across all categories.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/">Home</a>
+        <a href="/#categories">Categories</a>
+        <a href="/shoes/">Shoes</a>
+        <a href="https://ikako.vip/r/9v88f" target="_blank" rel="noopener">Register</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    window.SITE_BASE = new URL("../", location.href).pathname;
+    if (!window.SITE_BASE.endsWith("/")) window.SITE_BASE += "/";
+  </script>
+  <script src="../js/products-data.js?v=2"></script>
+  <script src="../js/catalog-utils.js?v=3"></script>
+  <script src="../js/finds.js?v=3"></script>
+  <script src="../js/main.js?v=2"></script>
+</body>
+</html>
